@@ -4,6 +4,7 @@
 ### 7900：eureka-order端口
 ### 8030：hystrix-user端口（可测试容错）
 ### 8020：feign-user端口
+### 8050: zuul 端口
 
 # ribbon负载均衡：
 ### 根据https://blog.csdn.net/Poiscorpion/article/details/91892421 配置多端口启动同一个微服务进行测试
@@ -16,3 +17,7 @@
 # feign采用面向接口编程方式:
 ### 1.启动多个服务提供者order，服务feign-user可以通过扫描注解@FeignClient获取远程调用的服务的方法
 ### 2.可以结合ribbon和hystrix
+
+
+# zuul 网关
+### 1. 调用网关的暴露接口可以直接调用order服务
