@@ -5,6 +5,8 @@
 ### 8030：hystrix-user端口（可测试容错）
 ### 8020：feign-user端口
 ### 8050: zuul 端口
+### 8888: config server端口
+### 8801: config client端口
 
 # ribbon负载均衡：
 ### 根据https://blog.csdn.net/Poiscorpion/article/details/91892421 配置多端口启动同一个微服务进行测试
@@ -21,3 +23,11 @@
 
 # zuul 网关
 ### 1. 调用网关的暴露接口可以直接调用order服务
+
+
+# config server 配置服务器
+### 1. 通过 http://localhost:8888/microservice-config-server/{profile} 可以获取对应的信息
+
+
+# config client 配置客户端
+### 1. 通过 http://localhost:8801/clientParam 获取配置信息
