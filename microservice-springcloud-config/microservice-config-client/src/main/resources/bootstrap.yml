@@ -1,0 +1,12 @@
+server:
+  port: 8801 # 指定实例端口号
+
+
+spring:
+  application:
+    name: microservice-config-client  # 指定应用名称
+  cloud:
+    config:
+      profile: prod  # 配置服务中的 {profile}
+      uri: http://localhost:8888/
+
